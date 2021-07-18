@@ -1,0 +1,122 @@
+***********Github****************
+
+github/git:
+	source control
+	pull(from)-push(to)
+	best practice:
+		first thing in the morning -pull latest code
+		make changes to code
+		at EOD/ or at least twice a day-push code
+	Operations(deployment): (Devops)
+		get the latest (pull)
+		build
+		deploy
+
+
+#how to create folder in our computer
+
+open cmd->( write) mkdir mygithub [note:- here mygithub is folder name] 
+-------------------------------------
+#how to go to that created folder (in case of mine is 'mygithub')
+
+open cmd -> cd mygithub
+-------------------------------------
+
+open cmd -> cd mygithub
+than type -> echo "this is my first github line">>file1.txt
+
+-----------------------------------------
+#how to see what contents is in file1.txt?
+
+open cmd->notepad file.txt 
+-----------------------------------------------
+open cmd->type file.txt 
+------------------------------------------------
+if we write git status() on cmd , it will show error because it havenot initialize the git yet, so first we have to initialize git first.........................
+
+so download git from crome
+
+---------------------------------------------------
+
+now type "git "on cmd ..............now it will not show error
+
+-----------------------------------------------------
+
+and again if we type "git status " on cmd , it will also show error like "not a git repository"
+because we havenot initialize our current directory/folder to be a git repository
+
+so type on cmd
+-> git init
+-> dir
+->git add file1.txt
+->git commit -m "first commit"  [here -m defines message]
+->git remote add origin https://github.com/shetu000/git_tutorials.git     [Note: copy this from your github repo][it will connection my  folder/ my remote repo  to the hosted repo on github]               
+
+-----------------------------------------------------
+#how to check my remote folder (which is in my machine) is connected to which github url?
+
+
+open cmd
+->go to the path of your project folder
+->type on cmd
+->git remote -v
+
+-------------------------------------------------------
+#push file in main branch?
+
+open cmd 
+-> git push -u origin main
+
+--------------------------------------------------------
+
+#how to switch from master branch to main branch?
+
+open cmd
+go to project folder path
+git status ( if output comes as "on master branch " than type below command)
+git branch -M main
+
+-----------------------------------------------------
+
+git status-> it will show which branch are you on
+
+------------------------------------------------------
+default branch on github was master but now it is changed to main(it changes just 6 months ago)
+
+-------------------------------------------------------
+ #how to change/switch branch on github?
+
+->git branch -M temp
+->git status
+---------------------------------------------------------
+#after changes your file 
+-> git add <filename>
+-> git add file1.txt
+---------------------------------------------------------
+#how to commit files on git
+-> git commit -m " first commit"
+---------------------------------------------------------
+#how to push on main branch?
+-> git push -u origin main
+
+----------------------------------------------------------
+#how to cheack your current folder is connection with any github repo or not?
+-> go to your folder directory
+-> git remote -v 
+-----------------------------------------------------------
+
+#cloning from existing repository
+
+->go back to root  directory( open cmd and type -> cd . .)
+->create your new folder
+->mkdir  demoproject
+-> cd  demoproject
+->git  status (for checking)
+->git  clone  https://github.com/ajaysinghalaar/demofolder.git
+-> dir (for checking )
+----------------------------------------------------------------
+
+
+
+
+
