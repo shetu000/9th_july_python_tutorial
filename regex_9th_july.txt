@@ -1,0 +1,59 @@
+regex:
+----------------------------------------------    
+#how to see all files in a specific directory ?
+-> open cmd
+->dir *.*
+----------------------------------------------
+
+#how to see word files using cmd?
+
+->go to directory( ex-cd :\temp)
+->dir *.docx
+
+-----------------------------------------------
+
+#how to see all files starting name with py ,using cmd?
+
+->go to directory/folder
+->dir py*
+
+-----------------------------------------------
+#how to see all files starting matching the string ,using cmd?
+
+->go to directory/folder
+-> dir ?yDemos  [note: pydemos is the file name ]
+
+----------------------------------------------
+
+#more commants?
+1. dir p?rt*
+
+-----------------------------------------------
+regex:
+
+ import re
+^ =>this means "it begins with" (this is a carret symbol)
+. => this means " followd by single character"
+* =>0 or more characters
+$ =>string ends with (opposite of carret symbol)
+
+ex code below:-
+import re
+txt="The rain in spain"
+x=re.search("^The. *Spain$",txt)
+print(x)
+----------------------------------------------------- 
+meta characters:
+[a-m] => it matches string with a to m
+
+-----------------------------------------------------
+escape sequence:
+    \n =>new line
+    \t => new tab
+    \r=> 
+-------------------------------------------------------
++ =>means one or more occurence
+| =>means either or  [ex- The | the]
+\d =>means search for digits in the given string
+\D => search for a string the does not have digits
+------------------------------------------------------
