@@ -1,0 +1,48 @@
+Application Testing:
+
+           Unit Testing - Indvidual developers
+                      manual testing
+                      automation 
+                               write code for unit testing
+           Integration Testing
+                       merge code of all  developers and test
+           System testing
+                       end-to-end testing
+                       manually-testing team - split
+                       automation - selenium
+           smoke testing
+                       display all production
+
+
+          performance testing :
+                       load testing
+                       stress testing
+                                  1 user 
+                                   100 user
+                                    500 user
+           UAT- User Acceptance Testing
+                       end-users
+
+           Security Penetration Testing(scePen)
+--------------------------------------------------------------------------	
+Unit Testing:(it is about three steps -> arrange,assert,act)
+ AAA: Arrange Act Assert
+Arrange:
+       arrange the data, objects,variables
+Act on:
+       Perform the operations
+Assert:
+      It will verify of the results of opperations
+----------------------------------------------------------------------------
+
+test fixture:
+   baseline components
+          components , variables, data etc. are available to all test cases
+   test cases:
+          a set of conditions to determine whether module/component is working properly
+   test suit:
+          group of test cases
+          customer test suite
+   test runner:
+          tool used to run the test cases
+------------------------------------------------------------------------------
