@@ -20,3 +20,25 @@ def test_collatz_1():
     assert next_collatz_element(1)==4
 def test_collatz_2():
     assert next_collatz_element(5)==16
+
+#there is another to test pip install pytest-cov
+# pytest coverage
+# go to terminal 
+# write-> coverage run -m pytest .\math_func_testing_client.py -> enter
+#it will generate a coverage file in your folder
+
+
+#there is another to test pip install pytest-cov
+# pytest coverage
+# go to terminal 
+# write-> coverage html --include=.\math_func_testing_client.py -> enter
+#it will create coverage html file in curreent folder
+# open in browser to check
+
+
+#there is another to test pip install pytest-cov
+# pytest coverage
+# go to terminal 
+# write-> coverage html --include=.\math_func_testing.py -> enter
+#it will create coverage html file in curreent folder
+# open in browser to check
